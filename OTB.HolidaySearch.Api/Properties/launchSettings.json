@@ -1,0 +1,11 @@
+﻿{  
+  "profiles": {
+    "OTB.HolidaySearch.Api": {
+      "commandName": "Project",
+      "applicationUrl": "http://localhost:5169",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

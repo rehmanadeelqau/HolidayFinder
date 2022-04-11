@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTB.HolidaySearch.Api", "OTB.HolidaySearch.Api\OTB.HolidaySearch.Api.csproj", "{6A51B13F-248F-4451-8847-3A8D9B9E1FC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTB.HolidaySearch.Domain", "OTB.HolidaySearch.Domain\OTB.HolidaySearch.Domain.csproj", "{3C0B5646-74CB-4925-9234-4C633C2CAE5E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTB.HolidaySearch.FunctionalTests", "OTB.HolidaySearch.FunctionalTests\OTB.HolidaySearch.FunctionalTests.csproj", "{6B5BF2F9-684F-4634-ABF7-66ABEEB4599B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTB.HolidaySearch.Gds", "OTB.HolidaySearch.Gds\OTB.HolidaySearch.Gds.csproj", "{4AE22A4C-7FCF-450C-B7E6-652EA591AAC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTB.HolidaySearch.Tests", "OTB.HolidaySearch.Tests\OTB.HolidaySearch.Tests.csproj", "{18C20F2E-FB2D-4ECC-A81B-1A8634294340}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A51B13F-248F-4451-8847-3A8D9B9E1FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A51B13F-248F-4451-8847-3A8D9B9E1FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A51B13F-248F-4451-8847-3A8D9B9E1FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A51B13F-248F-4451-8847-3A8D9B9E1FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C0B5646-74CB-4925-9234-4C633C2CAE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0B5646-74CB-4925-9234-4C633C2CAE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0B5646-74CB-4925-9234-4C633C2CAE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0B5646-74CB-4925-9234-4C633C2CAE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5BF2F9-684F-4634-ABF7-66ABEEB4599B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5BF2F9-684F-4634-ABF7-66ABEEB4599B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5BF2F9-684F-4634-ABF7-66ABEEB4599B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5BF2F9-684F-4634-ABF7-66ABEEB4599B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE22A4C-7FCF-450C-B7E6-652EA591AAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE22A4C-7FCF-450C-B7E6-652EA591AAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE22A4C-7FCF-450C-B7E6-652EA591AAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE22A4C-7FCF-450C-B7E6-652EA591AAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C20F2E-FB2D-4ECC-A81B-1A8634294340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C20F2E-FB2D-4ECC-A81B-1A8634294340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C20F2E-FB2D-4ECC-A81B-1A8634294340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C20F2E-FB2D-4ECC-A81B-1A8634294340}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC6C4BFF-AD63-45C7-8DC1-5B778F2531E1}
+	EndGlobalSection
+EndGlobal

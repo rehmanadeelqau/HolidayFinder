@@ -1,0 +1,84 @@
+[
+  {
+    "city_code": "MAN",
+    "city_name": "Manchester",
+    "airports": [
+      {
+        "airport_code": "MAN",
+        "name": "Manchester International Airport",
+        "country": "United Kingdom"
+      }
+    ]
+  },
+  {
+    "city_code": "TFS",
+    "city_name": "Granadilla",
+    "airports": [
+      {
+        "airport_code": "TFS",
+        "name": "Sur-Reina Sofia Airport",
+        "country": "Spain"
+      }
+    ]
+  },
+  {
+    "city_code": "AGP",
+    "city_name": "Malaga",
+    "airports": [
+      {
+        "airport_code": "AGP",
+        "name": "Malaga Airport",
+        "country": "Spain"
+      }
+    ]
+  },
+  {
+    "city_code": "PMI",
+    "city_name": "Palma",
+    "airports": [
+      {
+        "airport_code": "PMI",
+        "name": "Palma de Mallorca Airport",
+        "country": "Spain"
+      }
+    ]
+  },
+  {
+    "city_code": "LON",
+    "city_name": "London",
+    "airports": [
+      {
+        "airport_code": "LTN",
+        "name": "London Luton Airport",
+        "country": "United Kingdom"
+      },
+      {
+        "airport_code": "LGW",
+        "name": "London Gatwick Airport",
+        "country": "United Kingdom"
+      }
+    ]
+  },
+  {
+    "city_code": "LPA",
+    "city_name": "Telde",
+    "airports": [
+      {
+        "airport_code": "LPA",
+        "name": "Las Palmas Airport",
+        "country": "Spain"
+      }
+    ]
+  },
+  {
+    "city_code": "ANY",
+    "city_name": "Anywhere",
+    "airports": [
+      {
+        "airport_code": "Anywhere",
+        "name": "Anywhere",
+        "country": "World"
+      }
+    ]
+  }
+]
