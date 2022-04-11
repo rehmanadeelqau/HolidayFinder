@@ -37,7 +37,7 @@ This class also matches the matching hotels with the user search criteria & crea
 
 ## OTB.HolidaySearch.Gds
 This is the libraby which provides the source data to the domain layer. It implements the interfaces defined
-in the Domain layer & allows us to switch/change implementaion if we need to. If we want to switch from
+in the Domain layer & allows us to switch/change implementation if we need to. If we want to switch from
 json files to real GDS, we can easily achieve this by adding another implementation of the FlightsConverter, HotelsConverter etc.
 This would avoid making any change in the domain layer.
 
@@ -93,9 +93,9 @@ This file holds the referential data of different cities & airports in those cit
 ```
 
 ## OTB.HolidaySearch.FunctionalTests
-This is functional/integration tests libraby which tests end to end flow by specifying different pre-defined search criterias - E.g.
+This is functional/integration tests library which tests end to end flow by specifying different pre-defined search criterias - E.g.
 * ShouldPerformBestHolidaySearchFor_MAN_TO_AGP_Itinerary
-...This is the first scenario given in the exercise with departure from `MAN` on 2023/07/01, arrival at AGP for 7 nights
+This is the first scenario given in the exercise with departure from `MAN` on `2023/07/01`, arrival at `AGP` for `7` nights
 ```javascript
 Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
 Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(826));
@@ -108,7 +108,8 @@ Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Nh Malaga"))
 Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(83));
 ```
 
-...This is the second scenario given in the exercise with departure from `any London airport` on 2023/06/15, arrival at PMI for 10 nights
+* ShouldPerformBestHolidaySearchFor_ANY_LON_TO_PMI_Itinerary
+This is the second scenario given in the exercise with departure from `any London airport` on `2023/06/15`, arrival at `PMI` for `10` nights
 ```javascript
 Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
 Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(675));
@@ -121,7 +122,8 @@ Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Sol Katmandu
 Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(60));
 ```
 
-...This is the third scenario given in the exercise with departure from `anywhere` on 2022/11/10, arrival at LPA for 14 nights
+* ShouldPerformBestHolidaySearchFor_ANYWHERE_TO_LPA_Itinerary
+This is the third scenario given in the exercise with departure from `anywhere` on `2022/11/10`, arrival at `LPA` for `14` nights
 ```javascript
 Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
 Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(1175));
@@ -134,7 +136,7 @@ Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Club Maspalo
 Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(75));
 ```
 
-I've added some more tests as well to cover more senarios as well:
+I've added some more tests as well to cover more senarios as well: More & more scnerios can be added considering the permutations & combinations of the recommendation's combinations.
 * ShouldBringMultipleHolidaySearchResultsFor_ANYWHERE_TO_PMI_Itinerary
 * ShouldNotPerformSearchFor_InvalidAirportOrCityCode
 * ShouldNotPerformSearchFor_PastDepartureDate
