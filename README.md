@@ -58,7 +58,7 @@ This is an interfaces which allows other interfaces to implement generics.
 
 ##### locations.json
 This file holds the referential data of different cities & airports in those cities. E.g.
-`
+```json
 [
 ...
 	{
@@ -90,4 +90,4 @@ This file holds the referential data of different cities & airports in those cit
 	}
 ...
 ]
-`
+```
