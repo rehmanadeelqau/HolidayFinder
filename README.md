@@ -91,3 +91,50 @@ This file holds the referential data of different cities & airports in those cit
 ...
 ]
 ```
+
+## OTB.HolidaySearch.FunctionalTests
+This is functional/integration tests libraby which tests end to end flow by specifying different pre-defined search criterias - E.g.
+* ShouldPerformBestHolidaySearchFor_MAN_TO_AGP_Itinerary
+...This is the first scenario given in the exercise with departure from `MAN` on 2023/07/01, arrival at AGP for 7 nights
+```javascript
+Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
+Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(826));
+Assert.That(holidayRecommendations?[0].Flight.Id, Is.EqualTo(2));
+Assert.That(holidayRecommendations?[0].Flight.From, Is.EqualTo("MAN"));
+Assert.That(holidayRecommendations?[0].Flight.To, Is.EqualTo("AGP"));
+Assert.That(holidayRecommendations?[0].Flight.Price, Is.EqualTo(245));
+Assert.That(holidayRecommendations?[0].Hotel.Id, Is.EqualTo(9));
+Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Nh Malaga"));
+Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(83));
+```
+
+...This is the second scenario given in the exercise with departure from `any London airport` on 2023/06/15, arrival at PMI for 10 nights
+```javascript
+Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
+Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(675));
+Assert.That(holidayRecommendations?[0].Flight.Id, Is.EqualTo(6));
+Assert.That(holidayRecommendations?[0].Flight.From, Is.EqualTo("LGW"));
+Assert.That(holidayRecommendations?[0].Flight.To, Is.EqualTo("PMI"));
+Assert.That(holidayRecommendations?[0].Flight.Price, Is.EqualTo(75));
+Assert.That(holidayRecommendations?[0].Hotel.Id, Is.EqualTo(5));
+Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Sol Katmandu Park & Resort"));
+Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(60));
+```
+
+...This is the third scenario given in the exercise with departure from `anywhere` on 2022/11/10, arrival at LPA for 14 nights
+```javascript
+Assert.That(holidayRecommendations?.Count, Is.GreaterThan(0));
+Assert.That(holidayRecommendations?[0].TotalPrice, Is.EqualTo(1175));
+Assert.That(holidayRecommendations?[0].Flight.Id, Is.EqualTo(7));
+Assert.That(holidayRecommendations?[0].Flight.From, Is.EqualTo("MAN"));
+Assert.That(holidayRecommendations?[0].Flight.To, Is.EqualTo("LPA"));
+Assert.That(holidayRecommendations?[0].Flight.Price, Is.EqualTo(125));
+Assert.That(holidayRecommendations?[0].Hotel.Id, Is.EqualTo(6));
+Assert.That(holidayRecommendations?[0].Hotel.HotelName, Is.EqualTo("Club Maspalomas Suites and Spa"));
+Assert.That(holidayRecommendations?[0].Hotel.PricePerNight, Is.EqualTo(75));
+```
+
+I've added some more tests as well to cover more senarios as well:
+* ShouldBringMultipleHolidaySearchResultsFor_ANYWHERE_TO_PMI_Itinerary
+* ShouldNotPerformSearchFor_InvalidAirportOrCityCode
+* ShouldNotPerformSearchFor_PastDepartureDate
